@@ -89,7 +89,7 @@ class Processor(object):
     def state(self, Xs, trad, idx):
         features = []
 
-        # Print previous featues
+        # Print previous features
         start = {'feature': '_START_'}
         for i, pidx in enumerate(range(idx - self.previous, idx)):
             if pidx < 0:
@@ -145,13 +145,17 @@ class Sequencer(object):
         output = self.policy.predict(feats)
         return self.processor.tlabels[output[0]]
 
-def readDataset(fn):
+def readDataset(fn, limit=0, seed=12345):
+    """
+    fn: Filename
+    limit: (int) Integer to limit the number of sequences returned. Oly active if non-zero
+    """
     if fn == '-':
         f = sys.stdin
     else:
         f = open(fn)
 
-    def run(f):
+    def run(f, limit):
         sequences = []
         classes = set()
         sequence = []
@@ -170,10 +174,13 @@ def readDataset(fn):
         if sequence:
             sequences.append(sequence)
 
+        if limit != 0:
+            idxs = np.random.choice(range(len(sequences)), limit, replace=False)
+        sequences = [sequences[idx] for idx in idxs]
         return sequences, classes
 
     try:
-        return run(f)
+        return run(f, limit)
     finally:
         if f != '-':
             f.close()

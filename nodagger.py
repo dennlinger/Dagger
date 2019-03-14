@@ -1,3 +1,11 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Created on Mon Mar 11 10:42:45 2019
+
+@author: dennis
+"""
+
 import random
 import sys
 
@@ -18,6 +26,7 @@ from utils import readDataset, Processor, Sequencer, test, save
 class Dagger(object):
     def __init__(self, proc, Xss, yss, valid_set=0.1, validation_set=None):
         self.seen_states = set()
+        self.old_state_set = []
         self.state_set = []
         self.proc = proc
         self.valid_set = 0.1
@@ -46,13 +55,81 @@ class Dagger(object):
         self.valid_Xss = valid_Xss
         self.valid_yss = valid_yss
 
+    def train(self, epochs=30):
+
+        # Add to the initial set
+        states = 0
+        for Xs, ys in zip(self.Xss, self.yss):
+            states += len(ys)
+            self.add_sequence(Xs, ys, ys, force=True)
+
+        print(len(self.seen_states), "unique,", states, "total")
+        
+        # Initial policy just mimics the expert
+        clf = self.train_model()
+
+        # Get best policy found so far
+        bscore, bclf= self.score_policy(clf), clf
+
+        print("Best score seen:",  bscore)
+
+        for e in range(1, epochs):
+            # for noDAgger, remove the old seen samples.
+            self.old_state_set = self.state_set
+            self.state_set = []
+            # Generate new dataset
+            print("Generating new dataset")
+            dataSize = len(self.state_set)
+            self.gen_dataset(clf, e)
+
+            if dataSize == len(self.state_set):
+                break
+
+            # Retrain
+            print("Training")
+            clf = self.train_model()
+
+            print("Scoring")
+            score = self.score_policy(clf)
+            print("New Policy Score:",  score)
+
+            if score < bscore:
+                bscore = score
+                bclf = clf
+
+        return bclf
+
+    def train_model(self):
+        print("Featurizing...")
+        tX, tY = [], []
+        for X, y in self.state_set:
+            tX.append(X)
+            tY.append(y)
+
+        tX, tY = spa.vstack(tX), np.vstack(tY)
+
+        print("Running learner...")
+        clf = SGDClassifier(loss="hinge", penalty="l2", max_iter=50, tol=1e-3)
+        #clf = LinearSVC(penalty="l2", class_weight='auto')
+        print("Samples:", tX.shape[0])
+        clf.fit(tX, tY.ravel())
+        return clf
+
+    def gen_dataset(self, clf, epoch):
+        sequencer = Sequencer(self.proc, clf)
+
+        # Generate new dataset
+        for Xs, ys in zip(self.Xss, self.yss):
+            # build trajectory
+            trad = self.generate(Xs, ys, 1 if epoch == 0 else 0, sequencer)
+            self.add_sequence(Xs, ys, trad)
+                
     def generate(self, Xs, ys, exp, sequencer):
         """
         Generates a new trajectory.
         """
         # copy orig seq
         trad = []
-
         for i in range(len(Xs)):
             if np.random.random() < exp:
                 # Oracle
@@ -60,21 +137,8 @@ class Dagger(object):
             else:
                 # Policy
                 output = sequencer._partial_pred(Xs, trad, i)
-
             trad.append(output)
-
         return trad
-
-    def gen_dataset(self, clf, epoch):
-        sequencer = Sequencer(self.proc, clf)
-        # Generate new dataset
-        for Xs, ys in zip(self.Xss, self.yss):
-            # build tradjectory
-            trad = self.generate(Xs, ys, 1 if epoch == 0 else 0, sequencer)
-            # If different than the input, add it
-            if any(y != t for y, t in zip(ys, trad)):
-                self.add_sequence(Xs, ys, trad)
-                #pprint.pprint(zip([X['feature'] for X in Xs], ys, trad))
 
     def add_sequence(self, Xs, ys, trads, force=False):
         for i in range(len(Xs)):
@@ -98,63 +162,6 @@ class Dagger(object):
 
         return np.mean(scores)
 
-    def train(self, epochs=30):
-
-        # Add to the initial set
-        states = 0
-        for Xs, ys in zip(self.Xss, self.yss):
-            states += len(ys)
-            self.add_sequence(Xs, ys, ys, force=True)
-
-        print(len(self.seen_states), "unique,", states, "total")
-        
-        # Initial policy just mimics the expert
-        clf = self.train_model()
-
-        # Get best policy found so far
-        bscore, bclf= self.score_policy(clf), clf
-
-        print("Best score seen:",  bscore)
-
-        for e in range(1, epochs):
-
-            # Generate new dataset
-            print("Generating new dataset")
-            dataSize = len(self.state_set)
-            self.gen_dataset(clf, e)
-
-            if dataSize == len(self.state_set):
-                break
-
-            # Retrain
-            print("Training")
-            clf = self.train_model()
-
-            print("Scoring")
-            score = self.score_policy(clf)
-            print("New Policy Score:",  bscore)
-
-            if score < bscore:
-                bscore = score
-                bclf = clf
-
-        return bclf
-
-    def train_model(self):
-        print("Featurizing...")
-        tX, tY = [], []
-        for X, y in self.state_set:
-            tX.append(X)
-            tY.append(y)
-
-        tX, tY = spa.vstack(tX), np.vstack(tY)
-
-        print("Running learner...")
-        clf = SGDClassifier(loss="hinge", penalty="l2", max_iter=50, tol=1e-3)
-        #clf = LinearSVC(penalty="l2", class_weight='auto')
-        print("Samples:", tX.shape[0])
-        clf.fit(tX, tY.ravel())
-        return clf
 
 def subset(Xss, yss, idxs, rs, shuffle=True):
     # could be range object
@@ -211,7 +218,7 @@ def main(fn, limit):
     print("F1: micro {:.4f}, macro {:.4f}, weighted {:.4f}".format(f1['micro avg']['f1-score'], f1['macro avg']['f1-score'],
                                                                    f1['weighted avg']['f1-score']))
 
-    with open("dagger_results.csv", "a") as f:
+    with open("nodagger_results.csv", "a") as f:
         f.write("{} {:.4f} {:.4f} {:.4f}\n".format(limit, f1['micro avg']['f1-score'], f1['macro avg']['f1-score'],
                                                  f1['weighted avg']['f1-score']))
 #    print("Training all")
