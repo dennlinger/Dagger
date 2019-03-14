@@ -12,7 +12,7 @@ from sklearn.linear_model import SGDClassifier
 from sklearn.metrics import classification_report
 from sklearn.model_selection import KFold
 
-from utils import readDataset, Processor, Sequencer, test
+from utils import readDataset, Processor, Sequencer, test, testNER
 
 def build(Xs, ys, idxs, rs):
     if type(idxs) != list:
@@ -86,15 +86,45 @@ def main(fn, limit, dataset_seed):
     with open("baseline_results.csv", "a") as f:
         f.write("{} {:.4f} {:.4f} {:.4f}\n".format(limit, f1['micro avg']['f1-score'], f1['macro avg']['f1-score'],
                                                  f1['weighted avg']['f1-score']))
-#    print("Training all")
-#    idxs = range(len(Xs))
-#    tr_X, tr_y = build(Xs, ys, idxs, rs)
-#    clf = train(tr_X, tr_y)
-#    seq = Sequencer(proc, clf)
+        
+    print("Training all")
+   
+    idxs = range(len(Xs))
+    tr_X, tr_y = build_sequential(Xs, ys, idxs)
+    print(len(Xs))
+    clf = train(tr_X, tr_y)
+    seq = Sequencer(proc, clf)
+    
+    print("Test all")
+    testdata, _ = readDataset("./NER/test.txt")
+    Xs, ys = [], []
+    for i, d in enumerate(testdata):
+        X, y = [], []
+        trad = [x['output'] for x in d]
+        for i in range(len(d)):
+            X.append(proc.transform(d, trad, i))
+            y.append(proc.encode_target(trad, i))
+
+        Xs.append(X)
+        ys.append(y)
+    idxs = range(len(Xs))
+    testNER(testdata, ys, idxs, seq)
 #
 #    save(sp, seq)
+    
+def build_sequential(Xs, ys, idxs):
+    if type(idxs) != list:
+        idxs = list(idxs)
+    X, y = [], []
+    for idx in idxs:
+        X.extend(Xs[idx])
+        y.extend(ys[idx])
+
+    return spa.vstack(X), np.vstack(y)
+
+
 
 if __name__ == '__main__':
-    sys.stdout = open(os.devnull, 'w')
+#    sys.stdout = open(os.devnull, 'w')
     random.seed(0)
     main(sys.argv[1], int(sys.argv[2]), int(sys.argv[3]))

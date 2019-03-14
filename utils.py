@@ -148,7 +148,7 @@ class Sequencer(object):
 def readDataset(fn, limit=0, seed=12345):
     """
     fn: Filename
-    limit: (int) Integer to limit the number of sequences returned. Oly active if non-zero
+    limit: (int) Integer to limit the number of sequences returned. Oly active if non-zero.
     """
     if fn == '-':
         f = sys.stdin
@@ -176,7 +176,7 @@ def readDataset(fn, limit=0, seed=12345):
 
         if limit != 0:
             idxs = np.random.choice(range(len(sequences)), limit, replace=False)
-        sequences = [sequences[idx] for idx in idxs]
+            sequences = [sequences[idx] for idx in idxs]
         return sequences, classes
 
     try:
@@ -214,4 +214,29 @@ def test(Xss, yss, test_idx, seq):
     print("Errors per bad seq:", perrs / nerrors if nerrors else 0, nerrors)
     print("Phrase Accuracy:", (len(test_idx) - nerrors) / len(test_idx))
     return y_true, y_pred
+
+def testNER(Xss, yss, test_idx, seq, fin="./NER/test.txt", fout="./NER/baseline_eval"):
+    y_pred = []
+    print("Tabc")
+    for idx in test_idx:
+        preds = seq.classify(Xss[idx], raw=False)
+        y_pred.extend(preds)
+    print("Test all")
+    with open(fin) as f:
+        lines = f.readlines()
+    
+    counter = 0
+    output = ""
+    print("Length: {}".format(len(lines)))
+    print("Length of preds: {}".format(len(y_pred)))
+    for line in lines:
+        if line.rstrip("\n"):
+            output += line.rstrip("\n") + " " + y_pred[counter] + "\n"
+            counter += 1
+        else:
+            output += "\n"
+            
+    with open(fout, "w") as f:
+        f.write(output)
+
 

@@ -20,7 +20,7 @@ from sklearn.neighbors import DistanceMetric
 from sklearn.metrics import classification_report
 from sklearn.model_selection import KFold
 
-from utils import readDataset, Processor, Sequencer, test
+from utils import readDataset, Processor, Sequencer, test, testNER
 
 
 class Dagger(object):
@@ -221,17 +221,28 @@ def main(fn, limit, dataset_seed):
     with open("nodagger_results.csv", "a") as f:
         f.write("{} {:.4f} {:.4f} {:.4f}\n".format(limit, f1['micro avg']['f1-score'], f1['macro avg']['f1-score'],
                                                  f1['weighted avg']['f1-score']))
-#    print("Training all")
-#    idxs = range(len(data))
-#    tr_X, tr_y = subset(data, yss, idxs, rs)
-#    d = Dagger(proc, tr_X, tr_y)
-#    clf = d.train()
-#    seq = Sequencer(proc, clf)
-
-#    save(output_fn, seq)
+    print("Training all")
+   
+    idxs = range(len(data))
+    tr_X, tr_y = subset(data, yss, idxs, rs, shuffle=False)
+    print(len(idxs))
+    d = Dagger(proc, tr_X, tr_y)
+    clf = d.train(10)
+    seq = Sequencer(proc, clf)
+    
+    print("Test all")
+    testdata, _ = readDataset("./NER/test.txt")
+    yss = []
+    ryss = []
+    for Xs in testdata:
+        ys = [x['output'] for x in Xs]
+        yss.append(ys)
+        ryss.append([proc.encode_target(ys, i) for i in range(len(ys))])
+    idxs = range(len(yss))
+    testNER(testdata, ys, idxs, seq, fout="./NER/nodagger_eval")
 
 if __name__ == '__main__':
-    sys.stdout = open(os.devnull, 'w')
+#    sys.stdout = open(os.devnull, 'w')
     random.seed(0)
     np.random.seed(0)
     main(sys.argv[1], int(sys.argv[2]), int(sys.argv[3]))
