@@ -1,19 +1,18 @@
 import time
 import random
 import sys
+import os
 
 import numpy as np
 
 import scipy.sparse as spa
 
 from sklearn.linear_model import SGDClassifier
-from sklearn.svm import LinearSVC
 
 from sklearn.metrics import classification_report
 from sklearn.model_selection import KFold
 
-from utils import readDataset, Processor, Sequencer, test, save
-
+from utils import readDataset, Processor, Sequencer, test
 
 def build(Xs, ys, idxs, rs):
     if type(idxs) != list:
@@ -96,5 +95,6 @@ def main(fn, limit, dataset_seed):
 #    save(sp, seq)
 
 if __name__ == '__main__':
+    sys.stdout = open(os.devnull, 'w')
     random.seed(0)
     main(sys.argv[1], int(sys.argv[2]), int(sys.argv[3]))
