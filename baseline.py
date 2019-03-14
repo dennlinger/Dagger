@@ -35,9 +35,9 @@ def train(X, y):
     clf.fit(X, y.ravel())
     return clf
 
-def main(fn, limit):
+def main(fn, limit, dataset_seed):
     print("Reading in dataset")
-    data, classes = readDataset(fn, limit)
+    data, classes = readDataset(fn, limit, dataset_seed)
     print(len(data), " sequences found")
     print("Found classes:", sorted(classes))
     proc = Processor(classes, 2, 2, prefix=(1,3), affix=(2,1), hashes=2,
@@ -97,4 +97,4 @@ def main(fn, limit):
 
 if __name__ == '__main__':
     random.seed(0)
-    main(sys.argv[1], int(sys.argv[2]))
+    main(sys.argv[1], int(sys.argv[2]), int(sys.argv[3]))

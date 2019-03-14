@@ -74,7 +74,6 @@ class Dagger(object):
             # If different than the input, add it
             if any(y != t for y, t in zip(ys, trad)):
                 self.add_sequence(Xs, ys, trad)
-                #pprint.pprint(zip([X['feature'] for X in Xs], ys, trad))
 
     def add_sequence(self, Xs, ys, trads, force=False):
         for i in range(len(Xs)):
@@ -123,16 +122,13 @@ class Dagger(object):
             dataSize = len(self.state_set)
             self.gen_dataset(clf, e)
 
-            if dataSize == len(self.state_set):
-                break
-
             # Retrain
             print("Training")
             clf = self.train_model()
 
             print("Scoring")
             score = self.score_policy(clf)
-            print("New Policy Score:",  bscore)
+            print("New Policy Score:",  score)
 
             if score < bscore:
                 bscore = score
@@ -168,9 +164,9 @@ def subset(Xss, yss, idxs, rs, shuffle=True):
     tyss = [yss[i] for i in idxs]
     return tXss, tyss
 
-def main(fn, limit):
+def main(fn, limit, dataset_seed):
     print("Reading in dataset")
-    data, classes = readDataset(fn, limit)
+    data, classes = readDataset(fn, limit, dataset_seed)
     print(len(data), " sequences found")
     print("Found classes:", sorted(classes))
     proc = Processor(classes, 2, 2, prefix=(1,3), affix=(2,1), hashes=2,
@@ -226,4 +222,4 @@ def main(fn, limit):
 if __name__ == '__main__':
     random.seed(0)
     np.random.seed(0)
-    main(sys.argv[1], int(sys.argv[2]))
+    main(sys.argv[1], int(sys.argv[2]), int(sys.argv[3]))

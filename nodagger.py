@@ -143,10 +143,10 @@ class Dagger(object):
     def add_sequence(self, Xs, ys, trads, force=False):
         for i in range(len(Xs)):
             state = self.get_state(Xs, trads, i)
+            X = self.proc.transform(Xs, trads, i)
+            y = self.proc.encode_target(ys, i)[0]
+            self.state_set.append((X, y))
             if state not in self.seen_states or force:
-                X = self.proc.transform(Xs, trads, i)
-                y = self.proc.encode_target(ys, i)[0]
-                self.state_set.append((X, y))
                 self.seen_states.add(state)
 
     def get_state(self, Xs, trad, idx):
@@ -175,9 +175,9 @@ def subset(Xss, yss, idxs, rs, shuffle=True):
     tyss = [yss[i] for i in idxs]
     return tXss, tyss
 
-def main(fn, limit):
+def main(fn, limit, dataset_seed):
     print("Reading in dataset")
-    data, classes = readDataset(fn, limit)
+    data, classes = readDataset(fn, limit, dataset_seed)
     print(len(data), " sequences found")
     print("Found classes:", sorted(classes))
     proc = Processor(classes, 2, 2, prefix=(1,3), affix=(2,1), hashes=2,
@@ -233,4 +233,4 @@ def main(fn, limit):
 if __name__ == '__main__':
     random.seed(0)
     np.random.seed(0)
-    main(sys.argv[1], int(sys.argv[2]))
+    main(sys.argv[1], int(sys.argv[2]), int(sys.argv[3]))
