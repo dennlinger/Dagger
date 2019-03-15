@@ -125,6 +125,6 @@ def build_sequential(Xs, ys, idxs):
 
 
 if __name__ == '__main__':
-#    sys.stdout = open(os.devnull, 'w')
+    sys.stdout = open(os.devnull, 'w')
     random.seed(0)
     main(sys.argv[1], int(sys.argv[2]), int(sys.argv[3]))
