@@ -1,0 +1,420 @@
+/home/daumiller/anaconda3/lib/python3.7/site-packages/sklearn/metrics/classification.py:1143: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+/home/daumiller/anaconda3/lib/python3.7/site-packages/sklearn/metrics/classification.py:1145: UndefinedMetricWarning: Recall and F-score are ill-defined and being set to 0.0 in labels with no true samples.
+  'recall', 'true', average, warn_for)
+
+real	0m3,313s
+user	0m7,137s
+sys	0m0,136s
+/home/daumiller/anaconda3/lib/python3.7/site-packages/sklearn/metrics/classification.py:1143: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+/home/daumiller/anaconda3/lib/python3.7/site-packages/sklearn/metrics/classification.py:1145: UndefinedMetricWarning: Recall and F-score are ill-defined and being set to 0.0 in labels with no true samples.
+  'recall', 'true', average, warn_for)
+
+real	0m5,595s
+user	0m9,685s
+sys	0m0,136s
+/home/daumiller/anaconda3/lib/python3.7/site-packages/sklearn/metrics/classification.py:1143: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+/home/daumiller/anaconda3/lib/python3.7/site-packages/sklearn/metrics/classification.py:1145: UndefinedMetricWarning: Recall and F-score are ill-defined and being set to 0.0 in labels with no true samples.
+  'recall', 'true', average, warn_for)
+
+real	0m9,031s
+user	0m13,608s
+sys	0m0,148s
+/home/daumiller/anaconda3/lib/python3.7/site-packages/sklearn/metrics/classification.py:1143: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+/home/daumiller/anaconda3/lib/python3.7/site-packages/sklearn/metrics/classification.py:1145: UndefinedMetricWarning: Recall and F-score are ill-defined and being set to 0.0 in labels with no true samples.
+  'recall', 'true', average, warn_for)
+
+real	0m11,664s
+user	0m16,508s
+sys	0m0,128s
+/home/daumiller/anaconda3/lib/python3.7/site-packages/sklearn/metrics/classification.py:1143: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+/home/daumiller/anaconda3/lib/python3.7/site-packages/sklearn/metrics/classification.py:1145: UndefinedMetricWarning: Recall and F-score are ill-defined and being set to 0.0 in labels with no true samples.
+  'recall', 'true', average, warn_for)
+
+real	0m13,645s
+user	0m18,623s
+sys	0m0,196s
+/home/daumiller/anaconda3/lib/python3.7/site-packages/sklearn/metrics/classification.py:1143: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+/home/daumiller/anaconda3/lib/python3.7/site-packages/sklearn/metrics/classification.py:1145: UndefinedMetricWarning: Recall and F-score are ill-defined and being set to 0.0 in labels with no true samples.
+  'recall', 'true', average, warn_for)
+
+real	0m16,445s
+user	0m21,757s
+sys	0m0,112s
+/home/daumiller/anaconda3/lib/python3.7/site-packages/sklearn/metrics/classification.py:1143: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+/home/daumiller/anaconda3/lib/python3.7/site-packages/sklearn/metrics/classification.py:1145: UndefinedMetricWarning: Recall and F-score are ill-defined and being set to 0.0 in labels with no true samples.
+  'recall', 'true', average, warn_for)
+
+real	0m19,849s
+user	0m25,483s
+sys	0m0,124s
+/home/daumiller/anaconda3/lib/python3.7/site-packages/sklearn/metrics/classification.py:1143: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+/home/daumiller/anaconda3/lib/python3.7/site-packages/sklearn/metrics/classification.py:1145: UndefinedMetricWarning: Recall and F-score are ill-defined and being set to 0.0 in labels with no true samples.
+  'recall', 'true', average, warn_for)
+
+real	0m22,749s
+user	0m28,563s
+sys	0m0,128s
+/home/daumiller/anaconda3/lib/python3.7/site-packages/sklearn/metrics/classification.py:1143: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+/home/daumiller/anaconda3/lib/python3.7/site-packages/sklearn/metrics/classification.py:1145: UndefinedMetricWarning: Recall and F-score are ill-defined and being set to 0.0 in labels with no true samples.
+  'recall', 'true', average, warn_for)
+
+real	0m24,667s
+user	0m30,690s
+sys	0m0,156s
+/home/daumiller/anaconda3/lib/python3.7/site-packages/sklearn/metrics/classification.py:1143: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+/home/daumiller/anaconda3/lib/python3.7/site-packages/sklearn/metrics/classification.py:1145: UndefinedMetricWarning: Recall and F-score are ill-defined and being set to 0.0 in labels with no true samples.
+  'recall', 'true', average, warn_for)
+
+real	0m23,726s
+user	0m29,568s
+sys	0m0,096s
+/home/daumiller/anaconda3/lib/python3.7/site-packages/sklearn/metrics/classification.py:1143: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+/home/daumiller/anaconda3/lib/python3.7/site-packages/sklearn/metrics/classification.py:1145: UndefinedMetricWarning: Recall and F-score are ill-defined and being set to 0.0 in labels with no true samples.
+  'recall', 'true', average, warn_for)
+
+real	0m30,622s
+user	0m37,200s
+sys	0m0,192s
+/home/daumiller/anaconda3/lib/python3.7/site-packages/sklearn/metrics/classification.py:1143: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+/home/daumiller/anaconda3/lib/python3.7/site-packages/sklearn/metrics/classification.py:1145: UndefinedMetricWarning: Recall and F-score are ill-defined and being set to 0.0 in labels with no true samples.
+  'recall', 'true', average, warn_for)
+
+real	0m51,267s
+user	0m58,728s
+sys	0m0,164s
+/home/daumiller/anaconda3/lib/python3.7/site-packages/sklearn/metrics/classification.py:1143: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+/home/daumiller/anaconda3/lib/python3.7/site-packages/sklearn/metrics/classification.py:1145: UndefinedMetricWarning: Recall and F-score are ill-defined and being set to 0.0 in labels with no true samples.
+  'recall', 'true', average, warn_for)
+
+real	0m4,052s
+user	0m8,035s
+sys	0m0,172s
+/home/daumiller/anaconda3/lib/python3.7/site-packages/sklearn/metrics/classification.py:1143: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+/home/daumiller/anaconda3/lib/python3.7/site-packages/sklearn/metrics/classification.py:1145: UndefinedMetricWarning: Recall and F-score are ill-defined and being set to 0.0 in labels with no true samples.
+  'recall', 'true', average, warn_for)
+
+real	0m8,501s
+user	0m12,755s
+sys	0m0,148s
+/home/daumiller/anaconda3/lib/python3.7/site-packages/sklearn/metrics/classification.py:1143: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+/home/daumiller/anaconda3/lib/python3.7/site-packages/sklearn/metrics/classification.py:1145: UndefinedMetricWarning: Recall and F-score are ill-defined and being set to 0.0 in labels with no true samples.
+  'recall', 'true', average, warn_for)
+
+real	0m11,160s
+user	0m15,951s
+sys	0m0,152s
+/home/daumiller/anaconda3/lib/python3.7/site-packages/sklearn/metrics/classification.py:1143: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+/home/daumiller/anaconda3/lib/python3.7/site-packages/sklearn/metrics/classification.py:1145: UndefinedMetricWarning: Recall and F-score are ill-defined and being set to 0.0 in labels with no true samples.
+  'recall', 'true', average, warn_for)
+
+real	0m17,121s
+user	0m22,487s
+sys	0m0,108s
+/home/daumiller/anaconda3/lib/python3.7/site-packages/sklearn/metrics/classification.py:1143: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+/home/daumiller/anaconda3/lib/python3.7/site-packages/sklearn/metrics/classification.py:1145: UndefinedMetricWarning: Recall and F-score are ill-defined and being set to 0.0 in labels with no true samples.
+  'recall', 'true', average, warn_for)
+
+real	0m19,849s
+user	0m24,936s
+sys	0m0,104s
+/home/daumiller/anaconda3/lib/python3.7/site-packages/sklearn/metrics/classification.py:1143: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+/home/daumiller/anaconda3/lib/python3.7/site-packages/sklearn/metrics/classification.py:1145: UndefinedMetricWarning: Recall and F-score are ill-defined and being set to 0.0 in labels with no true samples.
+  'recall', 'true', average, warn_for)
+
+real	0m22,171s
+user	0m27,620s
+sys	0m0,164s
+/home/daumiller/anaconda3/lib/python3.7/site-packages/sklearn/metrics/classification.py:1143: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+/home/daumiller/anaconda3/lib/python3.7/site-packages/sklearn/metrics/classification.py:1145: UndefinedMetricWarning: Recall and F-score are ill-defined and being set to 0.0 in labels with no true samples.
+  'recall', 'true', average, warn_for)
+
+real	0m27,683s
+user	0m33,335s
+sys	0m0,168s
+/home/daumiller/anaconda3/lib/python3.7/site-packages/sklearn/metrics/classification.py:1143: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+/home/daumiller/anaconda3/lib/python3.7/site-packages/sklearn/metrics/classification.py:1145: UndefinedMetricWarning: Recall and F-score are ill-defined and being set to 0.0 in labels with no true samples.
+  'recall', 'true', average, warn_for)
+
+real	0m30,583s
+user	0m36,325s
+sys	0m0,124s
+/home/daumiller/anaconda3/lib/python3.7/site-packages/sklearn/metrics/classification.py:1143: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+/home/daumiller/anaconda3/lib/python3.7/site-packages/sklearn/metrics/classification.py:1145: UndefinedMetricWarning: Recall and F-score are ill-defined and being set to 0.0 in labels with no true samples.
+  'recall', 'true', average, warn_for)
+
+real	0m38,269s
+user	0m44,743s
+sys	0m0,152s
+/home/daumiller/anaconda3/lib/python3.7/site-packages/sklearn/metrics/classification.py:1143: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+/home/daumiller/anaconda3/lib/python3.7/site-packages/sklearn/metrics/classification.py:1145: UndefinedMetricWarning: Recall and F-score are ill-defined and being set to 0.0 in labels with no true samples.
+  'recall', 'true', average, warn_for)
+
+real	1m22,259s
+user	0m45,903s
+sys	0m43,751s
+/home/daumiller/anaconda3/lib/python3.7/site-packages/sklearn/metrics/classification.py:1143: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+/home/daumiller/anaconda3/lib/python3.7/site-packages/sklearn/metrics/classification.py:1145: UndefinedMetricWarning: Recall and F-score are ill-defined and being set to 0.0 in labels with no true samples.
+  'recall', 'true', average, warn_for)
+
+real	0m41,925s
+user	0m48,894s
+sys	0m0,124s
+/home/daumiller/anaconda3/lib/python3.7/site-packages/sklearn/metrics/classification.py:1143: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+/home/daumiller/anaconda3/lib/python3.7/site-packages/sklearn/metrics/classification.py:1145: UndefinedMetricWarning: Recall and F-score are ill-defined and being set to 0.0 in labels with no true samples.
+  'recall', 'true', average, warn_for)
+
+real	1m25,644s
+user	0m56,126s
+sys	0m37,321s
+/home/daumiller/anaconda3/lib/python3.7/site-packages/sklearn/metrics/classification.py:1143: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+/home/daumiller/anaconda3/lib/python3.7/site-packages/sklearn/metrics/classification.py:1145: UndefinedMetricWarning: Recall and F-score are ill-defined and being set to 0.0 in labels with no true samples.
+  'recall', 'true', average, warn_for)
+
+real	0m3,883s
+user	0m7,628s
+sys	0m0,172s
+/home/daumiller/anaconda3/lib/python3.7/site-packages/sklearn/metrics/classification.py:1145: UndefinedMetricWarning: Recall and F-score are ill-defined and being set to 0.0 in labels with no true samples.
+  'recall', 'true', average, warn_for)
+/home/daumiller/anaconda3/lib/python3.7/site-packages/sklearn/metrics/classification.py:1143: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+
+real	0m7,552s
+user	0m11,653s
+sys	0m0,108s
+/home/daumiller/anaconda3/lib/python3.7/site-packages/sklearn/metrics/classification.py:1143: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+/home/daumiller/anaconda3/lib/python3.7/site-packages/sklearn/metrics/classification.py:1145: UndefinedMetricWarning: Recall and F-score are ill-defined and being set to 0.0 in labels with no true samples.
+  'recall', 'true', average, warn_for)
+
+real	0m11,302s
+user	0m15,790s
+sys	0m0,140s
+/home/daumiller/anaconda3/lib/python3.7/site-packages/sklearn/metrics/classification.py:1143: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+/home/daumiller/anaconda3/lib/python3.7/site-packages/sklearn/metrics/classification.py:1145: UndefinedMetricWarning: Recall and F-score are ill-defined and being set to 0.0 in labels with no true samples.
+  'recall', 'true', average, warn_for)
+
+real	0m15,986s
+user	0m20,878s
+sys	0m0,116s
+/home/daumiller/anaconda3/lib/python3.7/site-packages/sklearn/metrics/classification.py:1143: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+/home/daumiller/anaconda3/lib/python3.7/site-packages/sklearn/metrics/classification.py:1145: UndefinedMetricWarning: Recall and F-score are ill-defined and being set to 0.0 in labels with no true samples.
+  'recall', 'true', average, warn_for)
+
+real	0m18,743s
+user	0m23,670s
+sys	0m0,136s
+/home/daumiller/anaconda3/lib/python3.7/site-packages/sklearn/metrics/classification.py:1143: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+/home/daumiller/anaconda3/lib/python3.7/site-packages/sklearn/metrics/classification.py:1145: UndefinedMetricWarning: Recall and F-score are ill-defined and being set to 0.0 in labels with no true samples.
+  'recall', 'true', average, warn_for)
+
+real	0m22,557s
+user	0m27,759s
+sys	0m0,172s
+/home/daumiller/anaconda3/lib/python3.7/site-packages/sklearn/metrics/classification.py:1143: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+/home/daumiller/anaconda3/lib/python3.7/site-packages/sklearn/metrics/classification.py:1145: UndefinedMetricWarning: Recall and F-score are ill-defined and being set to 0.0 in labels with no true samples.
+  'recall', 'true', average, warn_for)
+
+real	0m28,393s
+user	0m34,236s
+sys	0m0,144s
+/home/daumiller/anaconda3/lib/python3.7/site-packages/sklearn/metrics/classification.py:1143: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+/home/daumiller/anaconda3/lib/python3.7/site-packages/sklearn/metrics/classification.py:1145: UndefinedMetricWarning: Recall and F-score are ill-defined and being set to 0.0 in labels with no true samples.
+  'recall', 'true', average, warn_for)
+
+real	0m31,781s
+user	0m37,703s
+sys	0m0,136s
+/home/daumiller/anaconda3/lib/python3.7/site-packages/sklearn/metrics/classification.py:1143: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+/home/daumiller/anaconda3/lib/python3.7/site-packages/sklearn/metrics/classification.py:1145: UndefinedMetricWarning: Recall and F-score are ill-defined and being set to 0.0 in labels with no true samples.
+  'recall', 'true', average, warn_for)
+
+real	0m32,834s
+user	0m38,924s
+sys	0m0,092s
+/home/daumiller/anaconda3/lib/python3.7/site-packages/sklearn/metrics/classification.py:1143: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+/home/daumiller/anaconda3/lib/python3.7/site-packages/sklearn/metrics/classification.py:1145: UndefinedMetricWarning: Recall and F-score are ill-defined and being set to 0.0 in labels with no true samples.
+  'recall', 'true', average, warn_for)
+
+real	0m39,525s
+user	0m45,900s
+sys	0m0,116s
+/home/daumiller/anaconda3/lib/python3.7/site-packages/sklearn/metrics/classification.py:1143: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+/home/daumiller/anaconda3/lib/python3.7/site-packages/sklearn/metrics/classification.py:1145: UndefinedMetricWarning: Recall and F-score are ill-defined and being set to 0.0 in labels with no true samples.
+  'recall', 'true', average, warn_for)
+
+real	0m44,676s
+user	0m51,838s
+sys	0m0,184s
+/home/daumiller/anaconda3/lib/python3.7/site-packages/sklearn/metrics/classification.py:1143: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+/home/daumiller/anaconda3/lib/python3.7/site-packages/sklearn/metrics/classification.py:1145: UndefinedMetricWarning: Recall and F-score are ill-defined and being set to 0.0 in labels with no true samples.
+  'recall', 'true', average, warn_for)
+
+real	1m16,190s
+user	0m45,995s
+sys	0m37,442s
+/home/daumiller/anaconda3/lib/python3.7/site-packages/sklearn/metrics/classification.py:1143: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+/home/daumiller/anaconda3/lib/python3.7/site-packages/sklearn/metrics/classification.py:1145: UndefinedMetricWarning: Recall and F-score are ill-defined and being set to 0.0 in labels with no true samples.
+  'recall', 'true', average, warn_for)
+
+real	0m3,234s
+user	0m7,117s
+sys	0m0,168s
+/home/daumiller/anaconda3/lib/python3.7/site-packages/sklearn/metrics/classification.py:1143: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+/home/daumiller/anaconda3/lib/python3.7/site-packages/sklearn/metrics/classification.py:1145: UndefinedMetricWarning: Recall and F-score are ill-defined and being set to 0.0 in labels with no true samples.
+  'recall', 'true', average, warn_for)
+
+real	0m5,514s
+user	0m9,649s
+sys	0m0,132s
+/home/daumiller/anaconda3/lib/python3.7/site-packages/sklearn/metrics/classification.py:1143: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+/home/daumiller/anaconda3/lib/python3.7/site-packages/sklearn/metrics/classification.py:1145: UndefinedMetricWarning: Recall and F-score are ill-defined and being set to 0.0 in labels with no true samples.
+  'recall', 'true', average, warn_for)
+
+real	0m7,876s
+user	0m12,250s
+sys	0m0,092s
+/home/daumiller/anaconda3/lib/python3.7/site-packages/sklearn/metrics/classification.py:1143: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+/home/daumiller/anaconda3/lib/python3.7/site-packages/sklearn/metrics/classification.py:1145: UndefinedMetricWarning: Recall and F-score are ill-defined and being set to 0.0 in labels with no true samples.
+  'recall', 'true', average, warn_for)
+
+real	0m10,803s
+user	0m15,543s
+sys	0m0,100s
+Traceback (most recent call last):
+  File "baseline.py", line 10, in <module>
+    from sklearn.linear_model import SGDClassifier
+  File "/home/daumiller/anaconda3/lib/python3.7/site-packages/sklearn/linear_model/__init__.py", line 12, in <module>
+    from .base import LinearRegression
+  File "/home/daumiller/anaconda3/lib/python3.7/site-packages/sklearn/linear_model/base.py", line 38, in <module>
+    from ..preprocessing.data import normalize as f_normalize
+  File "/home/daumiller/anaconda3/lib/python3.7/site-packages/sklearn/preprocessing/__init__.py", line 8, in <module>
+    from .data import Binarizer
+  File "/home/daumiller/anaconda3/lib/python3.7/site-packages/sklearn/preprocessing/data.py", line 19, in <module>
+    from scipy import stats
+  File "/home/daumiller/anaconda3/lib/python3.7/site-packages/scipy/stats/__init__.py", line 345, in <module>
+    from .stats import *
+  File "/home/daumiller/anaconda3/lib/python3.7/site-packages/scipy/stats/stats.py", line 171, in <module>
+    from . import distributions
+  File "/home/daumiller/anaconda3/lib/python3.7/site-packages/scipy/stats/distributions.py", line 13, in <module>
+    from . import _continuous_distns
+  File "/home/daumiller/anaconda3/lib/python3.7/site-packages/scipy/stats/_continuous_distns.py", line 1162, in <module>
+    dweibull = dweibull_gen(name='dweibull')
+  File "/home/daumiller/anaconda3/lib/python3.7/site-packages/scipy/stats/_distn_infrastructure.py", line 1491, in __init__
+    super(rv_continuous, self).__init__(seed)
+  File "/home/daumiller/anaconda3/lib/python3.7/site-packages/scipy/stats/_distn_infrastructure.py", line 595, in __init__
+    sign = _getargspec(self._stats)
+  File "/home/daumiller/anaconda3/lib/python3.7/site-packages/scipy/_lib/_util.py", line 292, in getargspec_no_self
+    p.name for p in sig.parameters.values()
+  File "/home/daumiller/anaconda3/lib/python3.7/site-packages/scipy/_lib/_util.py", line 292, in <listcomp>
+    p.name for p in sig.parameters.values()
+KeyboardInterrupt
+
+real	0m0,354s
+user	0m0,304s
+sys	0m0,048s
+/home/daumiller/anaconda3/lib/python3.7/site-packages/sklearn/metrics/classification.py:1143: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+/home/daumiller/anaconda3/lib/python3.7/site-packages/sklearn/metrics/classification.py:1145: UndefinedMetricWarning: Recall and F-score are ill-defined and being set to 0.0 in labels with no true samples.
+  'recall', 'true', average, warn_for)
+
+real	0m16,622s
+user	0m21,962s
+sys	0m0,144s
+/home/daumiller/anaconda3/lib/python3.7/site-packages/sklearn/metrics/classification.py:1143: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+/home/daumiller/anaconda3/lib/python3.7/site-packages/sklearn/metrics/classification.py:1145: UndefinedMetricWarning: Recall and F-score are ill-defined and being set to 0.0 in labels with no true samples.
+  'recall', 'true', average, warn_for)
+Traceback (most recent call last):
+  File "baseline.py", line 100, in <module>
+    main(sys.argv[1], int(sys.argv[2]), int(sys.argv[3]))
+  File "baseline.py", line 74, in main
+    y_true, y_pred = test(data, ys, test_idx, seq)
+  File "/home/daumiller/Dagger/utils.py", line 202, in test
+    preds = seq.classify(Xss[idx], raw=True)
+  File "/home/daumiller/Dagger/utils.py", line 136, in classify
+    outputs.append(self._partial_pred(sequence, outputs, i))
+  File "/home/daumiller/Dagger/utils.py", line 145, in _partial_pred
+    output = self.policy.predict(feats)
+  File "/home/daumiller/anaconda3/lib/python3.7/site-packages/sklearn/linear_model/base.py", line 281, in predict
+    scores = self.decision_function(X)
+  File "/home/daumiller/anaconda3/lib/python3.7/site-packages/sklearn/linear_model/base.py", line 265, in decision_function
+    dense_output=True) + self.intercept_
+  File "/home/daumiller/anaconda3/lib/python3.7/site-packages/sklearn/utils/extmath.py", line 168, in safe_sparse_dot
+    ret = a * b
+  File "/home/daumiller/anaconda3/lib/python3.7/site-packages/scipy/sparse/base.py", line 470, in __mul__
+    return self._mul_multivector(other)
+  File "/home/daumiller/anaconda3/lib/python3.7/site-packages/scipy/sparse/compressed.py", line 473, in _mul_multivector
+    fn(M, N, n_vecs, self.indptr, self.indices, self.data, other.ravel(), result.ravel())
+KeyboardInterrupt
+
+real	0m9,223s
+user	0m11,434s
+sys	0m0,104s
+Traceback (most recent call last):
+  File "baseline.py", line 10, in <module>
+    from sklearn.linear_model import SGDClassifier
+  File "/home/daumiller/anaconda3/lib/python3.7/site-packages/sklearn/__init__.py", line 64, in <module>
+    from .base import clone
+  File "/home/daumiller/anaconda3/lib/python3.7/site-packages/sklearn/base.py", line 13, in <module>
+    from .utils.fixes import signature
+  File "/home/daumiller/anaconda3/lib/python3.7/site-packages/sklearn/utils/__init__.py", line 14, in <module>
+    from . import _joblib
+  File "/home/daumiller/anaconda3/lib/python3.7/site-packages/sklearn/utils/_joblib.py", line 22, in <module>
+    from ..externals import joblib
+  File "/home/daumiller/anaconda3/lib/python3.7/site-packages/sklearn/externals/joblib/__init__.py", line 119, in <module>
+    from .parallel import Parallel
+  File "/home/daumiller/anaconda3/lib/python3.7/site-packages/sklearn/externals/joblib/parallel.py", line 28, in <module>
+    from ._parallel_backends import (FallbackToBackend, MultiprocessingBackend,
+  File "/home/daumiller/anaconda3/lib/python3.7/site-packages/sklearn/externals/joblib/_parallel_backends.py", line 20, in <module>
+    from .pool import MemmappingPool
+  File "/home/daumiller/anaconda3/lib/python3.7/site-packages/sklearn/externals/joblib/pool.py", line 33, in <module>
+    from ._memmapping_reducer import get_memmapping_reducers
+  File "/home/daumiller/anaconda3/lib/python3.7/site-packages/sklearn/externals/joblib/_memmapping_reducer.py", line 17, in <module>
+    from uuid import uuid4
+  File "/home/daumiller/anaconda3/lib/python3.7/uuid.py", line 69, in <module>
+    class UUID:
+  File "/home/daumiller/anaconda3/lib/python3.7/uuid.py", line 300, in UUID
+    @property
+KeyboardInterrupt
+
+real	0m0,115s
+user	0m0,082s
+sys	0m0,033s
