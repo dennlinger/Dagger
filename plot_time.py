@@ -12,7 +12,7 @@ import numpy as np
 if __name__ == "__main__":
     x = list(range(25,301, 25))    
     fig, ax = plt.subplots()
-    plt.title("Training Time on CONLL 2000 Chunking Shared Task")
+    plt.title("Training Time on Penn Treebank PoS Tagging Task")
     plt.xlabel("Dataset size in sentences")
     plt.ylabel("Measured real execution time in s")
     
@@ -77,4 +77,4 @@ if __name__ == "__main__":
     
     plt.legend()
     
-    plt.savefig("chunking_time.png")
+    plt.savefig("pos_time.png")
